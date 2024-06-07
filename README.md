@@ -1,2 +1,2 @@
 # NeuroNirvana
-A web application to detect children's mental health and provide solution accordingly
+A web application to detect the current weather using API and also have a 5 day future forecast

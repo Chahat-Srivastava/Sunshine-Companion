@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Pacifico&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalam:wght@700&family=Pacifico&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("https://wallpapercave.com/wp/7rhrsIf.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+.upper-container {
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(96, 226, 255, 0.66);
+    padding: 10px;
+    border: 2px solid black;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+}
+
+.title-container {
+    font-family: 'Kalam', cursive;
+    font-size: 1.3em;
+    padding: 5px 20px;
+    background: rgba(255, 250, 250, 0.8);
+    border: 2px solid black;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Main Lower Container */
+.lower-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 80%;
+    width: 100%;
+}
+
+.image-container {
+    width: 40%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.lower-lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: rgba(0, 254, 238, 0.28);
+    height: auto;
+}
+
+.text-container {
+    font-family: 'Shadows Into Light', cursive;
+    background: rgba(255, 255, 255, 0.78);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-container h1 {
+    color: rgb(172, 175, 72);
+}
+
+.container {
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(0, 254, 238, 0.28);
+    border: 2px solid black;
+    text-align: center;
+}
+
+.input-container input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.btn-container button {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(255, 250, 250, 0.8);
+    cursor: pointer;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.weather-info {
+    margin-top: 20px;
+    align-self: center;
+}
+
+.weather-info h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.weather-info p {
+    font-family: 'Kalam', cursive;
+}
+
+.others {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.others button {
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(255, 250, 250, 0.8);
+}
+
+#home-button img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .upper-container {
+        height: 8%;
+    }
+
+    .title-container {
+        font-size: 1.3em;
+    }
+
+    .lower-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-container {
+        width: 90%;
+        height: 5%;
+    }
+
+    .text-container h1 {
+        font-size: 1.2em;
+    }
+
+    .input-container input {
+        width: 100%;
+    }
+
+    .btn-container button {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .upper-container {
+        height: 15%;
+    }
+
+    .icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .title-container {
+        font-size: 2em;
+        padding: 10px 40px;
+    }
+
+    .lower-container{
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .image-container {
+        width: 80%;
+        height:100%;
+    }
+
+    .lower-lower {
+        width: 90%;
+    }
+
+    .text-container h1 {
+        font-size: 1.4em;
+    }
+
+    .input-container input {
+        width: 90%;
+    }
+
+    .btn-container button {
+        font-size: 0.9em;
+    }
+
+    .weather-info h2 {
+        font-size: 1.4em;
+    }
+
+    .weather-info p {
+        font-size: 1em;
+    }
+}
+
+/*@media (max-width: 768px) {
+    .upper-container {
+        height: 8%;
+    }
+
+    .title-container {
+        font-size: 1.3em;
+    }
+
+    .lower-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-container {
+        width: 90%;
+    }
+
+    .text-container h1 {
+        font-size: 1.2em;
+    }
+
+    .input-container input {
+        width: 100%;
+    }
+
+    .btn-container button {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+}
+*/
